@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Xue - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/905d53b0fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "background"></div>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <div class="image"><img src="images/logo.png" class="logo"></div>
+            <div class="bar"></div><ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="images/Xue Final Resume.pdf">Résumé</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </dv></ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi! I'm <span id="sab-label"></span></h1>
+        </div>
+    </div>
+</div>
+
+<!--------about---------->
+<div id="about"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-body">
+                    <br><br>Hi, I'm Sabrina Xue! I'm originally from the suburbs of Chicago, and I now study Computer Science at the University of Michigan. Go blue! <i class="fa-regular fa-heart heart1"></i><i class="fa-regular fa-heart heart2"></i><br><br> 
+                    As a child of a security architect, I've always been surrounded by tech as a child, and growing up, my fascination with the inner workings of the devices we rely on so often has only grown. Fueled by an interest in user-focused products, I hope to use technology to create a more accessible and innovative future for everyone. Knowing the talent that all of us have, I'm confident that we can use our collective passion to (as they all say) make the world a better place!<br><br>
+                    Outside of the classroom and workplace, I love to spend time in nature, whether that be hiking through Banff and the Grand Canyon or snowboarding at Jackson Hole and Vail. Taking time to step outside helps balance out the amount of time I spend sitting in front of my screen coding  <i class="fa-regular fa-face-smile-beam"></i>  <br><br>
+                    It was great meeting you and I hope you have a fun time going through my website! Feel free to click on the tabs below to explore my skills, experience, and education: <br><br>
+            
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Languages:</span><br>C++<br>Python<br>HTML</li>
+                        <li><span>Software Engineering:</span><br>Object Oriented Programming<br>Data Structures and Algorithms<br>Dynamic Programming</li>
+                        <li><span>DevOps:</span><br>Docker<br>AWS<br>CI/CD</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2023 - August 2023</span><br>Software Engineering Intern at AMOpportunities<br><br>Assisted with design, implementation, and maintenance of CI/CD pipelines for cloud-based apps. Utilized GitHub Actions to migrate 30+ code repositories from Gitlab to Github.Refactored pipelines and workflows to deploy code to AWS using DataDog and AWS CloudWatch to alert cloud-based applications</li>
+                        <li><span>January 2024 - current</span><br>Web Commitee Lead at Kappa Theta Pi Pre-professional Technology Fraternity<br><br>Developed and maintained KTP website (https://ktpmichigan.com/) visited by over 100 members with CSS, HTML, and Figma. Led weekly committee meetings to mentor over 30 members in creating personal websites and add features to existing portfolios. Updated the website with important changes to the club, specifically renovating the executive board and members page</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>August 2022 - April 2025</span><br>University of Michigan - Bachelor of Science in Computer Science</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------end about---------------------->
+
+<!------------------projects---------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class = "sub-title">My Work</h1>
+        <div class="work-list">
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Machine Learning</h2>
+                <p>Used natural language processing, machine learning, and supervised learning models to automatically identify subjects of Piazza posts. Gained experience with recursion, function objects, binary trees, templates, comparators, and map data structure. Leveraged Container Abstract Data Types, Dynamic Memory, The Big Three, Linked Lists, and Iterators</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h2>Dynamizing & Streamlining Repos</h2>
+                <p> Operated serverless framework and Boto3 module to automate secrets per region with lambda functions. Integrated Slack into repos by creating changelogs applying to multiple pull requests to a single deployment. Utilized AWS-CLI to dynamically build a new staging environment by automatically generating ports, listeners, and secrets</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h2>Bank Wire Transfer</h2>
+                <p> Simulated a real-time gross settlement system by reading in and analyzing a set of customers, transactions, and various queries. Evaluated runtime and storage tradeoffs for storing and accessing data contained in multiple data structures. Implemented unordered maps, unordered sets, input redirection, structs, functors, error streams, and conversions</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Computer Vision</h2>
+                <p> Coded an image resizing program using a seam-carving algorithm with C++ in Visual Studio Code. Extracted data from data streams to find and remove image “seams” passing through the least essential pixels. Grew skills in testing, debugging, pointers, arrays, structs, strings, streams, IO, and abstract data types in C
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------end projects---------------------->
+
+<!------------------contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <br><br>
+                <h1 class="sub-title">Contact Me!</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sabrinx@umich.edu</p>
+                <p><i class="fa-solid fa-phone"></i> (+1)630-335-2314</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sabrina-xue-60a99b216/"><i class = "fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sabrinxumichh"><i class = "fab fa-github"></i></a>
+                </div>
+                <a href="images/XUE_TRANSCRIPT copy.pdf" download class="btn btn2">Download Transcript</a>
+            </div>
+            <div class="contact-right">
+                <br><br>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sabrina Xue <i class="fa-regular fa-face-smile-beam"></i> </p>
+    </div>
+</div>
+
+
+<!------------------end contact---------------------->
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tablink of tabcontents){
+            tablink.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzhhZ_-oxi5mXOqKsW7ThKrIeiBPNvNZx6NF-HvDXcFGjWvoViFcawsCcIINOkuqbA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    let typingText = new Typed("#sab-label", {
+        strings:["Sabrina", "happy to see you!"],
+        typeSpeed: 90,
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true,
+
+        /*
+        onComplete: function(self) {
+            // This function will execute after each loop completion
+            setTimeout(function() {
+                self.reset(); // Reset Typed instance to start from the beginning
+            }, 3000); // Delay before typing "happy to see you!" after "Sabrina"
+        }
+        */
+
+    })
+</script>
+</body>
+</html>
