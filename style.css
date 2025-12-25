@@ -256,12 +256,12 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: linear-gradient(90deg, #0161c8b5, #4588b59f);
+    background: #4588b59f;
 }
 
 .btn.btn3{
     display: inline-block;
-    background: linear-gradient(90deg, #0161c8b5, #4588b59f)
+    background: #4588b59f;
 }
 
 .btn.btn2{
